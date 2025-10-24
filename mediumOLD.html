@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyTown Explorer</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,7 +112,7 @@
       margin: 10px;
       padding-left: 75px;
       padding-right: 75px;
-      font-size: 30px;
+      font-size: 29px;
       font-weight: bold;
       width: 85%;
       background-color: rgba(7, 63, 57);
@@ -135,6 +138,11 @@
       border-right: none;
       border-left: none;
     }
+    .log {
+      width:fit-content;
+      size: 85%
+      
+    }
     </style>
 </head>
 <body>
@@ -152,10 +160,15 @@
     </div>
 
     <div class="content-holder2">
-      <button onclick="get_started()">Get Started</button>
-      <button>Profile</button>
+      <button onclick="get_started()">
+        <img  class="log"src="assets/getstart.png" alt="get_started">
+        Get Started</button>
+      <button>
+        <img class="log" src="assets/profile.png" alt="profile">
+        Profile</button>
     </div>
   </div>
+  <script src='https://www.noupe.com/embed/019a154fb6797d2b82f3128cda6f528743af.js'></script>
     <script>
         function get_started() {
             window.location.href = "homepage.html";
